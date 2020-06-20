@@ -1,0 +1,40 @@
+.main_chat
+  .main-header
+    .main-header__left-box
+      赤
+      %ul.main-header__left-box__member
+        Member :  
+        %li.main-header__left-box__member__username
+          itou takeshi
+    .main-header__edit__btn
+      =link_to "#" ,class:"btn"do
+        Edit 
+  .message
+    .message__list  
+      %p.message__list__info
+        itou takeshi 
+        %p.message__list__time
+          2020/06/18(Thu) 15:23:22
+    .message__text
+      %p.message__text__list
+        今日も雨
+
+    .message__list  
+      %p.message__list__info
+        itou takeshi 
+        %p.message__list__time
+          2020/06/18(Thu) 4:4:44
+    .message__text
+      %p.message__text__list
+        お腹すいたな〜。
+  .footer
+    .form_box
+      %input{type:"text",class:"form_box__text",placeholder:"type a message" }
+      .icon
+        %label{class:"form_box__image"} 
+          =icon('fa','image')
+          %input{type:"file",class:"form_box__hidden"}
+    %input{type:"submit",class:"submit__btn",value:"Send"}
+      
+            
+            
