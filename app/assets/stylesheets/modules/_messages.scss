@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  }
+a {
+  text-decoration : none;
+  }
+
+.wrapper {
+  display: flex;
+
+  .side_bar {
+    height: 100vh;
+    width: 300px;
+    background-color: #253141;
+
+     .side-header{
+       background-color: #253141;
+       height: 100px;
+       display: flex;
+       align-items: center;
+       padding: 0 20px;
+       
+        &__box{
+          display:flex;
+          justify-content: space-between;
+          height: 20px;
+          width: 260px;
+          margin:40px 0px;
+          background-color: #253141;
+          
+        &__username{
+          font-weight: bold;
+          color: white;    
+        }
+            
+            &__menu{
+              display: flex;
+              
+               li{
+                 a{
+                   color:white;
+                   margin-left: 0.3rem;
+                  }
+                 }  
+            }  
+          }
+        }  
+       .group{
+         height: calc(100vh - 100px);
+         background-color: #2f3e51;
+         padding: 20px 20px 0 20px;
+         overflow: scroll;
+
+          &__group--name{
+            font-size:15px;
+            color:#ffffff;
+            margin-bottom: 5px;
+          }
+
+          &__latest--massage{
+            font-size: 11px;
+            color:#ffffff;
+            margin-bottom: 40px;
+          }
+        }
+   }
+   .main_chat{ 
+     height: 100vh;
+     background-color: #ffffff;
+     width:calc(100vw - 300px);
+     
+      .main-header{
+        height: 100px;
+        background-color: #ffffff;
+        display:flex;
+        color:#333333;
+        font-size: 20px;
+        padding-left: 40px;
+        position:relative;
+
+        &__left-box{
+          color:#333333;
+          font-size: 20px;
+          margin:35px auto 15px 0;
+        } 
+         
+        &__left-box__member{
+           display: flex;
+           margin-top: 15px;
+           color:#999999;
+           font-size: 12px;
+                     
+        &__left-box__member__username{
+           color:#999999;
+           font-size: 12px;
+         }
+         }
+        &__edit__btn{
+          height: 40px;
+          top: 28px;
+          padding: 0 20px;
+          line-height: 40px;
+          width:72px;
+          border: solid 1px;
+          border-color: #38aef0;
+          font-size: 16px;
+          position: absolute;
+          right: 40px;
+         }
+           a{
+            color: #38aef0;
+           }
+      }
+        .message{
+          background-color: #fafafa;
+          height: calc(100vh - 190px);
+          padding:46px 40px;
+
+           &__list{
+             display: flex;
+           }
+           &__list__info{
+              color:#333333;
+              font-size: 16px;
+              font-weight: bold;
+           }    
+            &__list__time{
+              color:#999999;
+              font-size: 12px;
+              margin-left: 10px;
+           }
+           &__text__list{
+             color:#434a54;
+             font-size: 14px;
+             margin-top: 10px;
+             margin-bottom: 40px;
+           }
+         }
+  } 
+      .footer{
+          height: 90px;
+          background-color:#ddd;
+          width: calc(100vw - 300px);
+          padding: 20px 40px;
+          display: flex;
+
+          .form_box{
+            background-color:#ffffff;
+            height: 50px;
+            width:100%;
+            border: 0px none;
+            display: flex;
+            position:relative;
+            border: none;
+
+            &__text{
+              line-height: 50px;
+              color:#666;
+              margin-left: 5px;
+              width:100%;
+              border-style: none;
+            }
+
+            .icon{
+              position: absolute;
+              font-size: 1.3rem;
+              top: 10px;
+              right: 30px;
+            }  
+            &__hidden{
+              display:none;
+            }
+          }
+
+          .submit__btn{
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+            margin-left: 15px;
+            background-color:#38aef0 ;
+            color:#ffffff;
+
+          }  
+    }       
+}  
+    
+  
