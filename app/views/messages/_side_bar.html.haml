@@ -5,18 +5,19 @@
         =current_user.name
       %ul.side-header__box__menu
         %li.side-header__box__edit-user
-          =link_to "#" do
+          =link_to new_group_path do
             =icon('far','edit',class:"side-header__menu__icon")
         %li.side-header__box__item-icon
           =link_to edit_user_path(current_user) do
             =icon('fas','cog',class:"side-header__menu__icon")
   .groups
-    .group
-      =link_to "#" do
-        %p.group__group--name
-          赤 
-        %p.group__latest--massage
-          まだメッセージはありません。   
+    - current_user.groups.each do |group|
+      .group
+        =link_to "#" do
+          %p.group__group--name
+            = group.name
+          %p.group__latest--massage
+            まだメッセージはありません。   
           
                       
 
