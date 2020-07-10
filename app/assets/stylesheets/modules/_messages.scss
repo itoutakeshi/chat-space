@@ -111,34 +111,36 @@ a {
             color: #38aef0;
            }
       }
-        .message{
+        .messages{
           background-color: #fafafa;
           height: calc(100vh - 190px);
           padding:46px 40px;
           overflow: scroll;
-          
-           &__list{
+
+          .message{
+            &__list{
              
-           }
-           &__list__info{
-              color:#333333;
-              font-size: 16px;
-              font-weight: bold;
-              float: left;
-              margin-right: 20px;
-           }    
-            &__list__time{
-              color:#999999;
-              font-size: 12px;
-              
-              
-           }
-           &__text__list{
-             color:#434a54;
-             font-size: 14px;
-             margin-top: 10px;
-             margin-bottom: 40px;
-           }
+            }
+            &__list__info{
+               color:#333333;
+               font-size: 16px;
+               font-weight: bold;
+               float: left;
+               margin-right: 20px;
+            }    
+             &__list__time{
+               color:#999999;
+               font-size: 12px;
+               
+               
+            }
+            &__text__list{
+              color:#434a54;
+              font-size: 14px;
+              margin-top: 10px;
+              margin-bottom: 40px;
+            }             
+          }
          }
   } 
       .footer{
