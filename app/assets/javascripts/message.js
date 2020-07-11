@@ -1,7 +1,5 @@
 
   $(function(){ 
-    //var last_message_id = $('.message:last').data("message-id");
-    //console.log(last_message_id);
     function buildHTML(message){
       if ( message.image ) {
           var html =
@@ -88,7 +86,7 @@
       $.each(messages, function(i, message) {
         insertHTML += buildHTML(message)
       });
-      //メッセージが入ったHTMLに、入れ物ごと追加
+      
       $('.messages').append(insertHTML);
     $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       }
